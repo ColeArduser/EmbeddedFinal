@@ -63,7 +63,7 @@ static void LCD_WriteData_Byte(UBYTE data)
 void LCD_WriteData_Word(UWORD data)
 {
 	DEV_Digital_Write(DEV_CS_PIN_NUM, 0);
-	DEV_Digital_Write(DEV_DC_PIN_NUM, 1);
+	DEV_Digital_Write(DEV_DC_PIN, 1);
 	DEV_SPI_WRITE((data>>8) & 0xff);
 	DEV_SPI_WRITE(data);
 	DEV_Digital_Write(DEV_CS_PIN_NUM, 1);
