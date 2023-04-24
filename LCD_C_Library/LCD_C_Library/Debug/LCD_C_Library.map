@@ -383,7 +383,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2d50
+.text           0x00000000     0x2d86
  *(.vectors)
  .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -491,83 +491,86 @@ END GROUP
  .text.turnOffPWM
                 0x00001bdc       0x5e digital.o
  .text.digitalPinToPort
-                0x00001c3a       0x22 digital.o
+                0x00001c3a       0x16 digital.o
                 0x00001c3a                digitalPinToPort
  .text.digitalWrite
-                0x00001c5c       0x32 digital.o
-                0x00001c5c                digitalWrite
+                0x00001c50       0x3a digital.o
+                0x00001c50                digitalWrite
  .text.analogWrite
-                0x00001c8e       0x44 digital.o
-                0x00001c8e                analogWrite
+                0x00001c8a       0x44 digital.o
+                0x00001c8a                analogWrite
  .text.Paint_NewImage
-                0x00001cd2       0x48 GUI_Paint.o
-                0x00001cd2                Paint_NewImage
+                0x00001cce       0x48 GUI_Paint.o
+                0x00001cce                Paint_NewImage
  .text.Paint_SetPixel
-                0x00001d1a      0x11c GUI_Paint.o
-                0x00001d1a                Paint_SetPixel
+                0x00001d16      0x11c GUI_Paint.o
+                0x00001d16                Paint_SetPixel
  .text.Paint_Clear
-                0x00001e36       0x6a GUI_Paint.o
-                0x00001e36                Paint_Clear
+                0x00001e32       0x6a GUI_Paint.o
+                0x00001e32                Paint_Clear
  .text.Paint_DrawPoint
-                0x00001ea0       0xee GUI_Paint.o
-                0x00001ea0                Paint_DrawPoint
+                0x00001e9c       0xee GUI_Paint.o
+                0x00001e9c                Paint_DrawPoint
  .text.Paint_DrawLine
-                0x00001f8e      0x1c4 GUI_Paint.o
-                0x00001f8e                Paint_DrawLine
+                0x00001f8a      0x1c4 GUI_Paint.o
+                0x00001f8a                Paint_DrawLine
  .text.Paint_DrawRectangle
-                0x00002152       0xe0 GUI_Paint.o
-                0x00002152                Paint_DrawRectangle
+                0x0000214e       0xe0 GUI_Paint.o
+                0x0000214e                Paint_DrawRectangle
  .text.Paint_DrawCircle
-                0x00002232      0x2be GUI_Paint.o
-                0x00002232                Paint_DrawCircle
+                0x0000222e      0x2be GUI_Paint.o
+                0x0000222e                Paint_DrawCircle
  .text.Paint_DrawChar
-                0x000024f0      0x1a8 GUI_Paint.o
-                0x000024f0                Paint_DrawChar
+                0x000024ec      0x1a8 GUI_Paint.o
+                0x000024ec                Paint_DrawChar
  .text.Paint_DrawString_EN
-                0x00002698      0x108 GUI_Paint.o
-                0x00002698                Paint_DrawString_EN
+                0x00002694      0x108 GUI_Paint.o
+                0x00002694                Paint_DrawString_EN
  .text.LCD_WriteData_Byte
-                0x000027a0       0x26 LCD_Driver.o
+                0x0000279c       0x26 LCD_Driver.o
  .text.LCD_Write_Command
-                0x000027c6       0x1e LCD_Driver.o
+                0x000027c2       0x1e LCD_Driver.o
  .text.LCD_Reset
-                0x000027e4       0x48 LCD_Driver.o
+                0x000027e0       0x48 LCD_Driver.o
  .text.LCD_WriteData_Word
-                0x0000282c       0x32 LCD_Driver.o
-                0x0000282c                LCD_WriteData_Word
+                0x00002828       0x32 LCD_Driver.o
+                0x00002828                LCD_WriteData_Word
  .text.LCD_Init
-                0x0000285e      0x1b0 LCD_Driver.o
-                0x0000285e                LCD_Init
+                0x0000285a      0x1b0 LCD_Driver.o
+                0x0000285a                LCD_Init
  .text.LCD_SetWindow
-                0x00002a0e       0x70 LCD_Driver.o
-                0x00002a0e                LCD_SetWindow
+                0x00002a0a       0x70 LCD_Driver.o
+                0x00002a0a                LCD_SetWindow
  .text.LCD_SetCursor
-                0x00002a7e       0x5c LCD_Driver.o
-                0x00002a7e                LCD_SetCursor
+                0x00002a7a       0x5c LCD_Driver.o
+                0x00002a7a                LCD_SetCursor
  .text.LCD_Clear
-                0x00002ada       0x6a LCD_Driver.o
-                0x00002ada                LCD_Clear
+                0x00002ad6       0x6a LCD_Driver.o
+                0x00002ad6                LCD_Clear
  .text.LCD_DrawPaint
-                0x00002b44       0x16 LCD_Driver.o
-                0x00002b44                LCD_DrawPaint
- .text.setup    0x00002b5a      0x13c main.o
-                0x00002b5a                setup
- .text.main     0x00002c96        0x6 main.o
-                0x00002c96                main
+                0x00002b40       0x16 LCD_Driver.o
+                0x00002b40                LCD_DrawPaint
+ .text.wiring_init
+                0x00002b56       0x30 main.o
+                0x00002b56                wiring_init
+ .text.setup    0x00002b86      0x13c main.o
+                0x00002b86                setup
+ .text.main     0x00002cc2        0xa main.o
+                0x00002cc2                main
  .text.SPI_begin
-                0x00002c9c       0x42 SPI.o
-                0x00002c9c                SPI_begin
+                0x00002ccc       0x48 SPI.o
+                0x00002ccc                SPI_begin
  .text.SPI_transfer
-                0x00002cde        0xe SPI.o
-                0x00002cde                SPI_transfer
+                0x00002d14        0xe SPI.o
+                0x00002d14                SPI_transfer
  .text.avr-libc
-                0x00002cec       0x60 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(puts.o)
-                0x00002cec                puts
-                0x00002d4c                . = ALIGN (0x2)
+                0x00002d22       0x60 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(puts.o)
+                0x00002d22                puts
+                0x00002d82                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002d4c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00002d4c                _exit
-                0x00002d4c                exit
+ .fini9         0x00002d82        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00002d82                _exit
+                0x00002d82                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -586,11 +589,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002d4c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002d82        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00002d50                _etext = .
+                0x00002d86                _etext = .
 
-.data           0x00800100       0xfe load address 0x00002d50
+.data           0x00800100       0xfe load address 0x00002d86
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -618,8 +621,8 @@ END GROUP
  COMMON         0x00800212        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(iob.o)
                 0x00800212                __iob
                 0x00800218                PROVIDE (__bss_end, .)
-                0x00002d50                __data_load_start = LOADADDR (.data)
-                0x00002e4e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00002d86                __data_load_start = LOADADDR (.data)
+                0x00002e84                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800218        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -698,7 +701,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x1e0
+.debug_aranges  0x00000000      0x1e8
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x28 DEV_Config.o
@@ -711,14 +714,14 @@ END GROUP
  .debug_aranges
                 0x00000120       0x68 LCD_Driver.o
  .debug_aranges
-                0x00000188       0x30 main.o
+                0x00000188       0x38 main.o
  .debug_aranges
-                0x000001b8       0x28 SPI.o
+                0x000001c0       0x28 SPI.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x3a88
+.debug_info     0x00000000     0x3ab5
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_info    0x000005f4      0x131 DEV_Config.o
@@ -726,10 +729,10 @@ END GROUP
  .debug_info    0x000009e7      0x102 font24.o
  .debug_info    0x00000ae9     0x1ba2 GUI_Paint.o
  .debug_info    0x0000268b      0xd07 LCD_Driver.o
- .debug_info    0x00003392      0x56b main.o
- .debug_info    0x000038fd      0x18b SPI.o
+ .debug_info    0x00003392      0x598 main.o
+ .debug_info    0x0000392a      0x18b SPI.o
 
-.debug_abbrev   0x00000000      0xe31
+.debug_abbrev   0x00000000      0xe5a
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_abbrev  0x000005a2       0xa3 DEV_Config.o
@@ -737,54 +740,54 @@ END GROUP
  .debug_abbrev  0x00000786       0x95 font24.o
  .debug_abbrev  0x0000081b      0x238 GUI_Paint.o
  .debug_abbrev  0x00000a53      0x1ab LCD_Driver.o
- .debug_abbrev  0x00000bfe      0x11c main.o
- .debug_abbrev  0x00000d1a      0x117 SPI.o
+ .debug_abbrev  0x00000bfe      0x145 main.o
+ .debug_abbrev  0x00000d43      0x117 SPI.o
 
-.debug_line     0x00000000     0x168f
+.debug_line     0x00000000     0x16db
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x134 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_line    0x00000134      0x117 DEV_Config.o
- .debug_line    0x0000024b      0x1d2 digital.o
- .debug_line    0x0000041d       0x98 font24.o
- .debug_line    0x000004b5      0xa32 GUI_Paint.o
- .debug_line    0x00000ee7      0x52c LCD_Driver.o
- .debug_line    0x00001413      0x15b main.o
- .debug_line    0x0000156e      0x121 SPI.o
+ .debug_line    0x0000024b      0x1c6 digital.o
+ .debug_line    0x00000411       0x98 font24.o
+ .debug_line    0x000004a9      0xa32 GUI_Paint.o
+ .debug_line    0x00000edb      0x52c LCD_Driver.o
+ .debug_line    0x00001407      0x1b3 main.o
+ .debug_line    0x000015ba      0x121 SPI.o
 
-.debug_frame    0x00000000      0x7ec
+.debug_frame    0x00000000      0x7fc
  *(.debug_frame)
  .debug_frame   0x00000000       0x34 DEV_Config.o
  .debug_frame   0x00000034       0x6c digital.o
  .debug_frame   0x000000a0      0x544 GUI_Paint.o
  .debug_frame   0x000005e4      0x16c LCD_Driver.o
- .debug_frame   0x00000750       0x60 main.o
- .debug_frame   0x000007b0       0x3c SPI.o
+ .debug_frame   0x00000750       0x70 main.o
+ .debug_frame   0x000007c0       0x3c SPI.o
 
-.debug_str      0x00000000      0xa7d
+.debug_str      0x00000000      0xb26
  *(.debug_str)
  .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_str     0x00000208      0x192 DEV_Config.o
                                 0x1cb (size before relaxing)
- .debug_str     0x0000039a       0xb6 digital.o
-                                0x21b (size before relaxing)
- .debug_str     0x00000450       0x3c font24.o
+ .debug_str     0x0000039a      0x147 digital.o
+                                0x272 (size before relaxing)
+ .debug_str     0x000004e1       0x3c font24.o
                                 0x1ad (size before relaxing)
- .debug_str     0x0000048c      0x4ef GUI_Paint.o
+ .debug_str     0x0000051d      0x4ef GUI_Paint.o
                                 0x6bf (size before relaxing)
- .debug_str     0x0000097b       0xc5 LCD_Driver.o
+ .debug_str     0x00000a0c       0xc5 LCD_Driver.o
                                 0x291 (size before relaxing)
- .debug_str     0x00000a40       0x1c main.o
-                                0x2e2 (size before relaxing)
- .debug_str     0x00000a5c       0x21 SPI.o
+ .debug_str     0x00000ad1       0x34 main.o
+                                0x2fa (size before relaxing)
+ .debug_str     0x00000b05       0x21 SPI.o
                                 0x1cc (size before relaxing)
 
-.debug_loc      0x00000000     0x322f
+.debug_loc      0x00000000     0x31ea
  *(.debug_loc)
- .debug_loc     0x00000000      0x322 digital.o
- .debug_loc     0x00000322     0x273c GUI_Paint.o
- .debug_loc     0x00002a5e      0x6d8 LCD_Driver.o
- .debug_loc     0x00003136       0x56 main.o
- .debug_loc     0x0000318c       0xa3 SPI.o
+ .debug_loc     0x00000000      0x2dd digital.o
+ .debug_loc     0x000002dd     0x273c GUI_Paint.o
+ .debug_loc     0x00002a19      0x6d8 LCD_Driver.o
+ .debug_loc     0x000030f1       0x56 main.o
+ .debug_loc     0x00003147       0xa3 SPI.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -804,14 +807,14 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x180
+.debug_ranges   0x00000000      0x188
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x18 DEV_Config.o
  .debug_ranges  0x00000018       0x30 digital.o
  .debug_ranges  0x00000048       0xa8 GUI_Paint.o
  .debug_ranges  0x000000f0       0x58 LCD_Driver.o
- .debug_ranges  0x00000148       0x20 main.o
- .debug_ranges  0x00000168       0x18 SPI.o
+ .debug_ranges  0x00000148       0x28 main.o
+ .debug_ranges  0x00000170       0x18 SPI.o
 
 .debug_macro
  *(.debug_macro)

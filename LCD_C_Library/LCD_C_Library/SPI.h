@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <avr/io.h>
 #include <avr/pgmspace.h>
-#include <util/atomic.h>
 #include <avr/common.h>
 #include <avr/interrupt.h>
 

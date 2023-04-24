@@ -1,5 +1,7 @@
 #include "SPI.h"
 #include "digital.h"
+#include <avr/interrupt.h>
+#include <util/atomic.h>
 
 #define SS 10
 
@@ -17,9 +19,9 @@ void SPI_begin() {
 	uint8_t sreg = SREG;
 	cli();
 	
-	uint8_t port = PORTD;
+	uint8_t port = PORTB;
 	uint8_t bit = _BV(2);
-	volatile uint8_t *reg = (volatile uint8_t *)pgm_read_word( port_to_mode_PGM + port);
+	volatile uint8_t *reg = (volatile uint8_t *)pgm_read_word( port_to_mode_PGM[port]);
 	
 	if(!(*reg & bit)){
 		digitalWrite(SS, 1);

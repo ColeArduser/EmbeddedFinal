@@ -84,7 +84,7 @@
 /**
  * PWM_BL
 **/
- #define  DEV_Set_PWM(_Value)  analogWrite(DEV_BL_PIN, _Value)
+ #define  DEV_Set_PWM(_Value)  analogWrite(DEV_BL_PIN_NUM, _Value)
 
 /*-----------------------------------------------------------------------------*/
  void Config_Init();

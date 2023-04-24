@@ -57,8 +57,6 @@ uint8_t digitalPinToPort(uint8_t pin) {
 		return PORTD;
 		} else if (pin >= 8 && pin <= 13) {
 		return PORTB;
-		} else if (pin >= 14 && pin <= 19) {
-		return PORTC;
 		} else {
 		return 0;
 	}
@@ -118,8 +116,8 @@ uint8_t digitalRead(uint8_t pin)
 
 void digitalWrite(uint8_t pin, uint8_t value)
 {
-	uint8_t timer = pgm_read_byte(digital_pin_to_timer_PGM + pin);
-	uint8_t bit = pgm_read_byte(digital_pin_to_bit_mask_PGM + pin);
+	uint8_t timer = pgm_read_byte(digital_pin_to_timer_PGM[pin]);
+	uint8_t bit = pgm_read_byte(digital_pin_to_bit_mask_PGM[pin]);
 	uint8_t port = digitalPinToPort(pin);
 
 	if (port == 0) return;
